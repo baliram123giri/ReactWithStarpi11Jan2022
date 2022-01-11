@@ -34,6 +34,7 @@ export default function Student() {
         getStudent();
     }
   };
+  
   return (
     <>
      
@@ -65,6 +66,7 @@ export default function Student() {
           })}
         </tbody>
       </table>
+      <h5 className="text-center text-danger">{student.length===0?"No data Found":""}</h5>
     </>
   );
 }
